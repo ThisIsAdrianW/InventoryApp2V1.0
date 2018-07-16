@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Options menu for the CatalogActivity -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CatalogActivity">
+
+    <item
+        android:id="@+id/addNewProduct"
+        android:title="@string/addProd"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delData"
+        android:title="@string/delData"
+        app:showAsAction="never" />
+</menu>
