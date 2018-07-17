@@ -265,7 +265,7 @@ public class ProductDetails extends AppCompatActivity implements LoaderManager.L
             Toast.makeText(this, getString(R.string.call_fail),
                     Toast.LENGTH_SHORT).show();
         } else {
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phoneNumber));
                 startActivity(intent);
             }
